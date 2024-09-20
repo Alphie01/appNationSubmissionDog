@@ -17,7 +17,6 @@ abstract class HTTP_Requests {
     ),
   );
 
-  // Dio'ya CacheInterceptor ekle
   static void init() {
     _dio.interceptors.add(_cacheInterceptor);
   }

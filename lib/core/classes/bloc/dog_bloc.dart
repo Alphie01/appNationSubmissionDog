@@ -30,7 +30,7 @@ class DogBloc extends Bloc<DogEvent, DogState> {
         ));
       }
 
-      emit(DogLoaded(dogs: dogs)); // Data successfully loaded
+      emit(DogLoaded(dogs: dogs));
     } catch (error) {
       emit(DogError(message: 'Failed to load data. $error'));
     }

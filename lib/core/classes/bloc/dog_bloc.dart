@@ -19,7 +19,7 @@ class DogBloc extends Bloc<DogEvent, DogState> {
 
       List<Dog> dogs = [];
       for (var element in dogMaps.keys) {
-        print(dogMaps[element]);
+       /*  print(dogMaps[element]); */
         String dogName = element;
         CachedNetworkImageProvider dogImage = await fetchDogImages(element);
         List dogSubBreeds = dogMaps[element] ?? [];
